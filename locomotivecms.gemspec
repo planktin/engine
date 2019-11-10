@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.files = Dir['{app,config,db,lib,vendor}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
   s.files.reject! { |fn| fn.include?('app/javascript') }
 
-  s.add_dependency 'rails',                           '~> 5.1.6'
+  s.add_dependency 'rails',                           '< 5.2'
 
   s.add_dependency 'devise',                          '~> 4.4.1'
   s.add_dependency 'devise-encryptable',              '~> 0.2.0'
