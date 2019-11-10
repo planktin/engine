@@ -12,7 +12,7 @@ gemspec
 
 group :test, :development do
   gem 'ffi',          '~> 1.9.24'
-  gem 'rubyzip',      '~> 1.2.2'
+  gem 'rubyzip'
   gem 'rspec-rails',  '~> 3.7.2'
 
   # To use a debugger
