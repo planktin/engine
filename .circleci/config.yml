@@ -7,15 +7,20 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/ruby:2.5.1-node-browsers
+      # - image: circleci/ruby:2.5.1-node-browsers
+      - image: circleci/ruby:2.5.1-node # ...with this image as the primary container; this is where all `steps` will run
+        environment: # environment variables for primary container
+          RAILS_ENV: test
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/postgres:9.4
-      - image: circleci/mongo:3.4.18
+      # - image: circleci/mongo:3.4.18
+      #   environment:
 
-    # working_directory: ~/repo
+
+    working_directory: ~/repo
 
     steps:
       - checkout
