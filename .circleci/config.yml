@@ -36,11 +36,30 @@ jobs:
           name: install dependencies
           command: |
             bundle install --jobs=4 --retry=3 --path vendor/bundle
+            gem install rspec_junit_formatter
 
       - save_cache:
           paths:
             - ./vendor/bundle
           key: v1-dependencies-{{ checksum "Gemfile.lock" }}
+
+      # START copied
+      # - run:
+      #     name: Setup Bundler and Gems
+      #     command: |
+      #       gem install bundler
+      #       gem update bundler
+      #       gem install brakeman
+      #       gem install rubocop
+      #       gem install rubocop-rspec
+      #       bundle config without development:test
+      #       bundle check --path=vendor/bundle || bundle install --without development test --path=vendor/bundle --jobs 4 --retry 3
+      # END copied
+
+      # - run:
+      #   name: Install RSpec JUnit Formatter
+      #   command: |
+      #     gem install rspec_junit_formatter
 
       # Database setup
       # - run: bundle exec rake db:create
@@ -60,6 +79,12 @@ jobs:
               --out /tmp/test-results/rspec.xml \
               --format progress \
               $TEST_FILES
+
+      ### start
+      # test:
+      #   override:
+      #     - RAILS_ENV=test bundle exec rspec -r rspec_junit_formatter --format RspecJunitFormatter -o $CIRCLE_TEST_REPORTS/rspec/junit.xml
+      ### end
 
       # collect reports
       - store_test_results:
