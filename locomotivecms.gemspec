@@ -38,7 +38,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'kaminari-actionview',             '~> 1.1.1'
   s.add_dependency 'kaminari-mongoid',                '~> 1.0.1'
   s.add_dependency 'bootstrap-kaminari-views',        '~> 0.0.5'
-  s.add_dependency 'responders',                      '~> 2.4.0'
+  s.add_dependency 'responders',                      '>= 2.4', '< 3.1'
   s.add_dependency 'rails-i18n',                      '~> 5.1.1'
   s.add_dependency 'jbuilder',                        '~> 2.7'
 
