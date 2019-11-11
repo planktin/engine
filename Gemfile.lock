@@ -135,8 +135,9 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    adomain (0.1.1)
+    adomain (0.1.2)
       addressable (~> 2.5)
+      logger
     arel (9.0.0)
     attr_extras (5.2.0)
     autoprefixer-rails (8.0.0)
@@ -318,6 +319,7 @@ GEM
       attr_extras (~> 5.2.0)
       colorize
       stringex (~> 2.8.2)
+    logger (1.4.1)
     loofah (2.2.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
