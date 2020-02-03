@@ -210,7 +210,7 @@ GEM
       carrierwave-mongoid (~> 1.1.0)
       monetize (~> 1.9.0)
       mongoid (>= 6.2, < 7.0)
-    database_cleaner (1.6.2)
+    database_cleaner (1.8.2)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     devise (4.6.2)
@@ -508,7 +508,7 @@ DEPENDENCIES
   byebug
   capybara (~> 3.25.0)
   codeclimate-test-reporter (~> 1.0.7)
-  database_cleaner (~> 1.6.2)
+  database_cleaner (~> 1.8.2)
   email_spec (~> 2.2.0)
   factory_bot_rails (~> 4.11.1)
   grape-entity-matchers!
