@@ -43,7 +43,7 @@ group :test do
   gem 'grape-entity-matchers',    github: 'salsify/grape-entity-matchers', branch: 'grape-entity-exposures'
   gem 'shoulda-matchers',         '~> 3.1.2'
   gem 'rails-controller-testing', '~> 1.0.2'
-  gem 'factory_bot_rails',        '~> 4.8.2'
+  gem 'factory_bot_rails',        '~> 6.1.0'
   gem 'json_spec',                '~> 1.1.4'
   gem 'database_cleaner',         '~> 1.6.2'
   gem 'timecop',                  '~> 0.9.1'
