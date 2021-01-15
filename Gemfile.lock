@@ -203,7 +203,7 @@ GEM
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
     concurrent-ruby (1.1.5)
-    crass (1.0.4)
+    crass (1.0.6)
     custom_fields (2.10.0.beta3)
       activesupport (>= 5.1, < 6.0)
       bcrypt (~> 3.1.11)
@@ -318,7 +318,7 @@ GEM
       attr_extras (~> 5.2.0)
       colorize
       stringex (~> 2.8.2)
-    loofah (2.2.3)
+    loofah (2.9.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -356,7 +356,7 @@ GEM
     mustermann-grape (1.0.0)
       mustermann (~> 1.0.0)
     nio4r (2.5.1)
-    nokogiri (1.10.4)
+    nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
     nokogumbo (1.5.0)
       nokogiri
