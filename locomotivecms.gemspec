@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'rails',                           '>= 5.2.3', '< 6.0'
 
-  s.add_dependency 'devise',                          '~> 4.6.2'
+  s.add_dependency 'devise',                          '>= 4.6.2', '< 4.9.0'
   s.add_dependency 'devise-encryptable',              '~> 0.2.0'
   s.add_dependency 'simple_token_authentication',     '~> 1.15.1'
 
