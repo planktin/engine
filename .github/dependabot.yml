@@ -1,0 +1,55 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "19:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: actionview
+    versions:
+    - 5.2.4.4
+    - 5.2.4.5
+  - dependency-name: actionpack
+    versions:
+    - 5.2.4.4
+    - 5.2.4.5
+  - dependency-name: activesupport
+    versions:
+    - 5.2.4.4
+    - 5.2.4.5
+  - dependency-name: activestorage
+    versions:
+    - 5.2.4.4
+    - 5.2.4.5
+  - dependency-name: activerecord
+    versions:
+    - 5.2.4.5
+  - dependency-name: puma
+    versions:
+    - 5.2.0
+    - 5.2.1
+  - dependency-name: database_cleaner
+    versions:
+    - 1.8.5
+    - 2.0.0
+  - dependency-name: devise
+    versions:
+    - 4.7.3
+  - dependency-name: loofah
+    versions:
+    - 2.9.0
+  - dependency-name: simple_form
+    versions:
+    - 5.0.3
+  - dependency-name: image_optim_pack
+    versions:
+    - 0.7.0
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "19:00"
+  open-pull-requests-limit: 10
+  target-branch: v3.4.x
