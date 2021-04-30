@@ -69,6 +69,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'carrierwave-imageoptim',          '0.1.5'
   s.add_dependency 'image_optim',                     '0.26.3'
-  s.add_dependency 'image_optim_pack',                '0.5.1'
+  s.add_dependency 'image_optim_pack',                '0.7.0.20210430'
 
 end
