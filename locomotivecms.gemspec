@@ -42,7 +42,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'rails-i18n',                      '~> 5.1.1'
   s.add_dependency 'jbuilder',                        '~> 2.7'
 
-  s.add_dependency 'jquery-rails',                    '~> 4.3.1'
+  s.add_dependency 'jquery-rails',                    '>= 4.3.1', '< 4.5.0'
   s.add_dependency 'jquery-ui-rails',                 '~> 6.0.1'
   s.add_dependency 'codemirror-rails',                '~> 5.16.0'
   s.add_dependency 'flash_cookie_session',            '~> 1.1.1'
